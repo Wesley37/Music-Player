@@ -233,7 +233,7 @@ audio.addEventListener("timeupdate", () => {
 //Creates playlist
 const initializePlaylist = () => {
     for (let i in songsList) {
-        playlistSongs.innerHTML += `<li class='playlistSong' onclick='setSong(${i})'>
+        playlistSongs.innerHTML += `<li class='playlistSong' onclick='setSong(${i}), audio.play()'>
             <div class="playlist-image-container">
                 <img src="${songsList[i].image}"/>
             </div>
@@ -257,6 +257,8 @@ playlistButton.addEventListener("click", () => {
 //hide playlist
 closeButton.addEventListener("click", () => {
     playlistContainer.classList.add("hide");
+    pauseButton.classList.remove("hide");
+    playButton.classList.add("hide");
 });
 
 window.onload = () => {
