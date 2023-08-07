@@ -5,7 +5,7 @@
 }
 body {
   height: 100vh;
-  background-image: url("guitar.jpeg");
+  background-image: url("guitar.mp4");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -23,7 +23,6 @@ body {
   left: 50%;
   border-radius: 0.5em;
   box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
-  opacity: 0.7;
 }
 img {
   width: 100%;
